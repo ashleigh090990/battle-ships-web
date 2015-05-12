@@ -8,4 +8,8 @@ feature 'Starting a new game' do
   	fill_in('First Name', with: 'Alejandro')
   	find_button('Submit').click
   end
+
+  scenario 'Player does not provide name' do
+
+  end
 end

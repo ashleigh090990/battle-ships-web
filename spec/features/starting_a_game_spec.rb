@@ -5,10 +5,7 @@ feature 'Starting a new game' do
   	visit '/'
   	click_link 'New Game'
   	expect(page).to have_content "What is your name?"
-  end
-
-  scenario 'Fill in ad submit form to start game' do
-  	visit '/game'
   	fill_in('First Name', with: 'Alejandro')
+  	find_button('Submit').click
   end
 end
